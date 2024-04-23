@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        h1x = $("h1");
+        h1x.css("color","red")
+        
+        console.log(h1x.length)
+        setTimeout(()=>{
+            $("h1 span").css("visibility", "hidden");
+        },2000)
+        
+        $("#golink").click((event) =>{
+            even.preveventDefault();
+            console.log("Clicked")
+            location.href = "disp.html"
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <h1 id="h1a">This is <span>Naushad</span> h1a</h1>
+    <h1 id="h1b">This is h1b</h1>
+    <h1>THis is h1c</h1>
+    <a href="abc.html" id="golink">Go Link</a>
+  </body>
+</html>
